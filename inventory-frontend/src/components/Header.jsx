@@ -39,7 +39,11 @@ const Header = ({ page }) => {
           />
           <ChevronDown size={16} className="dropdown-icon" />
         </div>
-        <Settings size={18} className="icon" />
+        <a href="/settings" className="settings-button">
+          <Settings size={16} />
+          <span>Setting</span>
+        </a>
+
       </div>
     </header>
   );
