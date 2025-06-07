@@ -1,4 +1,4 @@
-// Dashboard.jsx
+// src/pages/Dashboard/Dashboard.jsx
 import {
   CartesianGrid,
   Cell,
@@ -12,8 +12,6 @@ import {
   XAxis,
   YAxis,
 } from "recharts";
-import Header from "../../components/Header";
-import Sidebar from "../../components/Sidebar";
 import "./Dashboard.css";
 
 const Dashboard = () => {
@@ -69,9 +67,7 @@ const Dashboard = () => {
 
   return (
     <div className="dashboard-container">
-      <Sidebar page="Dashboard" />
       <div className="dashboard-content">
-        <Header page="Dashboard" />
         <div className="dashboard-grid">
           {summaryCards.map((card, index) => (
             <div className="card" key={index}>

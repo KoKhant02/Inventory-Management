@@ -11,6 +11,7 @@
   top: 0;
   z-index: 10;
   margin-bottom: 24px;
+  margin-left: 250px;
 }
 
 .header-left {
@@ -99,4 +100,77 @@
 
 .settings-button svg {
   stroke: white;
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 0 16px;
+    margin-left: 0;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+
+  .header-left {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .tab-group {
+    flex-wrap: wrap;
+  }
+
+  .header-right {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .settings-button {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 0 80px;
+    margin-left: 0;
+    height: 64px;
+    flex-direction: row; /* Keep left and right side by side */
+    align-items: center;
+    flex-wrap: wrap; /* Allow wrapping if needed */
+    gap: 12px;
+  }
+
+  .header-left,
+  .header-right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+
+  .header-left {
+    align-items: flex-start;
+    Margin-right: 0px 100px !important;
+    flex-wrap: wrap;
+  }
+
+  .tab-group {
+    flex-wrap: wrap;
+  }
+
+  .settings-button {
+    padding: 4px 10px;
+    font-size: 11px;
+  }
+
+  .icon {
+    font-size: 16px;
+  }
 }
