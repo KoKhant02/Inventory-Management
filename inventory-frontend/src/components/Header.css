@@ -138,7 +138,7 @@
 
 @media (max-width: 767px) {
   .header {
-    padding: 0 80px;
+    padding: 0 24px 0 90px;
     margin-left: 0;
     height: 64px;
     flex-direction: row; /* Keep left and right side by side */

@@ -1,4 +1,5 @@
 // src/routes/AppRoutes.jsx
+import React from 'react';
 import { Navigate, Route, Routes } from 'react-router-dom';
 import MainLayout from '../layouts/MainLayout';
 import Login from '../pages/Auth/Login';
@@ -17,7 +18,7 @@ const AppRoutes = () => {
             <Route
               key={path}
               path={path}
-              element={<Component page={name} />}
+              element={React.createElement(Component, { page: name })}
             />
           ))}
         </Route>

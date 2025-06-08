@@ -1,0 +1,234 @@
+.item-list-container {
+  font-size: 14px;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.item-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.search-input {
+  width: 240px;
+  padding: 0.4rem 0.6rem;
+  font-size: 13px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.add-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.item-table {
+  min-width: 600px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-wrapper::-webkit-scrollbar {
+  height: 6px;
+}
+
+.table-wrapper::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 3px;
+}
+
+
+.item-table th,
+.item-table td {
+  padding: 10px 12px;
+  border-bottom: 1px solid #eee;
+  text-align: left;
+  font-size: 13.5px;
+}
+
+.barcode {
+  background: #f0f0f0;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+  font-size: 13px;
+}
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-right: 6px;
+  font-size: 14px;
+  color: #333;
+}
+
+.icon-button.delete {
+  color: red;
+}
+
+/* Modal overlay */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+/* Modal box */
+.modal {
+  all: unset;
+  background-color: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Modal close button */
+.modal-close {
+  position: absolute;
+  top: 0.5rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Modal content */
+
+.modal-content {
+  all: unset;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  font-size: 13px;
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.modal-content label {
+  all: unset;
+  border:none !important;
+  display: block;
+  margin-bottom: 0.8rem;
+  font-size: 13px;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 0.45rem;
+  font-size: 13px;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Save button */
+.save-button {
+  width: 100%;
+  padding: 0.6rem;
+  background-color: #000;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  font-size: 13px;
+}
+
+.back-button {
+  background-color: #000;
+  color: #fff;
+  padding: 0.4rem 1rem;
+  font-size: 13px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-left: 0.2rem;
+}
+
+@media (max-width: 600px) {
+  .search-input {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .item-list-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .add-button {
+    width: 100%;
+  }
+}
+
+.item-link {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  color: #007bff;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+}
+
+.item-link:hover {
+  text-decoration: underline;
+}
+
+select.search-input {
+  width: 100%;
+  padding: 0.45rem;
+  font-size: 13px;
+  margin-top: 0.3rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  background-color: #fff;
+  appearance: none;
+  background-image: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" width="10" height="6"><path fill="black" d="M0 0l5 6 5-6z"/></svg>');
+  background-repeat: no-repeat;
+  background-position: right 0.6rem center;
+  background-size: 10px 6px;
+}
+
+.modal-content label {
+  display: flex;
+  flex-direction: column;
+  font-size: 13px;
+  margin-bottom: 0.8rem;
+}
